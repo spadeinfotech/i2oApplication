@@ -40,7 +40,7 @@ public class i20ApplicationSanityTest extends TestBase {
 	@BeforeTest
 	public void go() throws InterruptedException{
 		 
-		System.out.println("inside before test");
+		System.out.println("inside test");
 		i20initialization();
 		
 	}
