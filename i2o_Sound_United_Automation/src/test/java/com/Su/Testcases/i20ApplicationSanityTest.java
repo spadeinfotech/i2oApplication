@@ -124,7 +124,7 @@ WebDriverWait wait=new WebDriverWait(driver, 60);
 	  System.out.println( "Inside alertsexceptions module");
 	  WebDriverWait wait=new WebDriverWait(driver, 60);
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='route-container']/app-alerts/div/div[3]/div/div[3]/div/ag-grid-angular/div/div[4]/span[1]")));
-	  System.out.println( driver.getCurrentUrl());
+	 System.out.println( driver.getCurrentUrl());
 	  Testutil.takeScreenshotAtEndOfTest();
 	  
 	 	   
@@ -137,6 +137,8 @@ WebDriverWait wait=new WebDriverWait(driver, 60);
 	  System.out.println( "Inside pricemonitoralerts module");
 	  WebDriverWait wait=new WebDriverWait(driver, 60);
  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='route-container']/price-monitor-alerts/div/div[3]/app-price-summary/div/div[3]/div/div[3]/div/div/ag-grid-angular/div/div[4]/span[1]")));
+ Thread.sleep(6000); 
+	
  System.out.println( driver.getCurrentUrl());	
  Testutil.takeScreenshotAtEndOfTest();
 	  
@@ -152,7 +154,9 @@ WebDriverWait wait=new WebDriverWait(driver, 60);
 	  System.out.println( "Inside newresellermanagement module");
 	  WebDriverWait wait=new WebDriverWait(driver, 60);
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='summaryRect']/table[2]/tr[1]/td[4]")));
-	 System.out.println( driver.getCurrentUrl()); 
+	 Thread.sleep(8000); 
+		
+	System.out.println( driver.getCurrentUrl()); 
 	Testutil.takeScreenshotAtEndOfTest();
 	  
 	 	   

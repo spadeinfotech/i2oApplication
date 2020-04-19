@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>CoreCompete</groupId>
-  <artifactId>i20_V2_Testing</artifactId>
+  <artifactId>SU_Automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>i20_V2_Testing</name>
+  <name>SU_Automation</name>
   <url>http://maven.apache.org</url>
 
   <properties>

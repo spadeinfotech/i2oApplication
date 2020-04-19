@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="i2o Sound united Automation" duration-ms="169544" started-at="2020-04-19T10:07:57Z" finished-at="2020-04-19T10:10:46Z">
+  <suite name="i2o Sound united Automation" duration-ms="183275" started-at="2020-04-19T14:12:17Z" finished-at="2020-04-19T14:15:20Z">
     <groups>
     </groups>
-    <test name="i2o SU Sanity testing" duration-ms="169544" started-at="2020-04-19T10:07:57Z" finished-at="2020-04-19T10:10:46Z">
+    <test name="i2o SU Sanity testing" duration-ms="183275" started-at="2020-04-19T14:12:17Z" finished-at="2020-04-19T14:15:20Z">
       <class name="com.Su.Testcases.i20ApplicationSanityTest">
-        <test-method status="PASS" signature="go()[pri:0, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="go" is-config="true" duration-ms="69321" started-at="2020-04-19T10:07:57Z" finished-at="2020-04-19T10:09:06Z">
+        <test-method status="PASS" signature="go()[pri:0, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="go" is-config="true" duration-ms="86991" started-at="2020-04-19T14:12:17Z" finished-at="2020-04-19T14:13:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- go -->
-        <test-method status="PASS" signature="ValidateHomepage()[pri:1, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateHomepage" duration-ms="18995" started-at="2020-04-19T10:09:06Z" finished-at="2020-04-19T10:09:25Z">
+        <test-method status="PASS" signature="ValidateHomepage()[pri:1, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateHomepage" duration-ms="23731" started-at="2020-04-19T14:13:44Z" finished-at="2020-04-19T14:14:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateHomepage -->
-        <test-method status="PASS" signature="ValidateSalesAnalysis()[pri:2, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateSalesAnalysis" duration-ms="26504" started-at="2020-04-19T10:09:25Z" finished-at="2020-04-19T10:09:52Z">
+        <test-method status="PASS" signature="ValidateSalesAnalysis()[pri:2, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateSalesAnalysis" duration-ms="20606" started-at="2020-04-19T14:14:07Z" finished-at="2020-04-19T14:14:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateSalesAnalysis -->
-        <test-method status="PASS" signature="ValidateA$E()[pri:3, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateA$E" duration-ms="7972" started-at="2020-04-19T10:09:52Z" finished-at="2020-04-19T10:10:00Z">
+        <test-method status="PASS" signature="ValidateA$E()[pri:3, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateA$E" duration-ms="7406" started-at="2020-04-19T14:14:28Z" finished-at="2020-04-19T14:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateA$E -->
-        <test-method status="PASS" signature="ValidatepriceMonitor()[pri:4, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidatepriceMonitor" duration-ms="10169" started-at="2020-04-19T10:10:00Z" finished-at="2020-04-19T10:10:10Z">
+        <test-method status="PASS" signature="ValidatepriceMonitor()[pri:4, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidatepriceMonitor" duration-ms="14745" started-at="2020-04-19T14:14:35Z" finished-at="2020-04-19T14:14:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatepriceMonitor -->
-        <test-method status="PASS" signature="ValidateResellermgmt()[pri:5, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateResellermgmt" duration-ms="13798" started-at="2020-04-19T10:10:10Z" finished-at="2020-04-19T10:10:24Z">
+        <test-method status="PASS" signature="ValidateResellermgmt()[pri:5, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateResellermgmt" duration-ms="15041" started-at="2020-04-19T14:14:50Z" finished-at="2020-04-19T14:15:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateResellermgmt -->
-        <test-method status="PASS" signature="ValidateBCM()[pri:6, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateBCM" duration-ms="8778" started-at="2020-04-19T10:10:24Z" finished-at="2020-04-19T10:10:33Z">
+        <test-method status="PASS" signature="ValidateBCM()[pri:6, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="ValidateBCM" duration-ms="5612" started-at="2020-04-19T14:15:05Z" finished-at="2020-04-19T14:15:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateBCM -->
-        <test-method status="PASS" signature="Validatedetailreports()[pri:7, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="Validatedetailreports" duration-ms="10783" started-at="2020-04-19T10:10:33Z" finished-at="2020-04-19T10:10:43Z">
+        <test-method status="PASS" signature="Validatedetailreports()[pri:7, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="Validatedetailreports" duration-ms="8272" started-at="2020-04-19T14:15:11Z" finished-at="2020-04-19T14:15:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validatedetailreports -->
-        <test-method status="PASS" signature="closedriver()[pri:0, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="closedriver" is-config="true" duration-ms="3102" started-at="2020-04-19T10:10:43Z" finished-at="2020-04-19T10:10:46Z">
+        <test-method status="PASS" signature="closedriver()[pri:0, instance:com.Su.Testcases.i20ApplicationSanityTest@56235b8e]" name="closedriver" is-config="true" duration-ms="822" started-at="2020-04-19T14:15:19Z" finished-at="2020-04-19T14:15:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedriver -->

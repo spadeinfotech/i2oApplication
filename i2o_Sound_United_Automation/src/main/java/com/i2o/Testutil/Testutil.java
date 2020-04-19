@@ -23,6 +23,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.google.cloud.bigquery.BigQuery;
+import com.google.cloud.bigquery.BigQueryOptions;
 import com.google.common.io.Files;
 import com.i2o.base.TestBase;
 
@@ -42,7 +44,13 @@ public class Testutil extends TestBase {
 		driver.switchTo().frame("mainpanel");
 	}
 	
-	
+		 
+
+	    public BigQuery getBigqueryInstance(String projectId) {
+
+	        return BigQueryOptions.getDefaultInstance().toBuilder().setProjectId(projectId).build().getService();
+	    }
+
 
 	public static Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
