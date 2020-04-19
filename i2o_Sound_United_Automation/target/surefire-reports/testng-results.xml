@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="i2o Sound united Automation" duration-ms="322274" started-at="2020-04-19T10:13:09Z" finished-at="2020-04-19T10:18:31Z">
+    <groups>
+    </groups>
+    <test name="i2o SU Sanity testing" duration-ms="322274" started-at="2020-04-19T10:13:09Z" finished-at="2020-04-19T10:18:31Z">
+      <class name="com.Su.Testcases.i20ApplicationSanityTest">
+        <test-method status="PASS" signature="go()[pri:0, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="go" is-config="true" duration-ms="229687" started-at="2020-04-19T15:43:09Z" finished-at="2020-04-19T15:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- go -->
+        <test-method status="PASS" signature="ValidateHomepage()[pri:1, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="ValidateHomepage" duration-ms="18807" started-at="2020-04-19T15:46:59Z" finished-at="2020-04-19T15:47:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateHomepage -->
+        <test-method status="PASS" signature="ValidateSalesAnalysis()[pri:2, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="ValidateSalesAnalysis" duration-ms="26372" started-at="2020-04-19T15:47:18Z" finished-at="2020-04-19T15:47:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSalesAnalysis -->
+        <test-method status="PASS" signature="ValidateA$E()[pri:3, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="ValidateA$E" duration-ms="8242" started-at="2020-04-19T15:47:44Z" finished-at="2020-04-19T15:47:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateA$E -->
+        <test-method status="PASS" signature="ValidatepriceMonitor()[pri:4, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="ValidatepriceMonitor" duration-ms="8372" started-at="2020-04-19T15:47:52Z" finished-at="2020-04-19T15:48:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatepriceMonitor -->
+        <test-method status="PASS" signature="ValidateResellermgmt()[pri:5, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="ValidateResellermgmt" duration-ms="10047" started-at="2020-04-19T15:48:01Z" finished-at="2020-04-19T15:48:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateResellermgmt -->
+        <test-method status="PASS" signature="ValidateBCM()[pri:6, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="ValidateBCM" duration-ms="7441" started-at="2020-04-19T15:48:11Z" finished-at="2020-04-19T15:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateBCM -->
+        <test-method status="PASS" signature="Validatedetailreports()[pri:7, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="Validatedetailreports" duration-ms="10906" started-at="2020-04-19T15:48:18Z" finished-at="2020-04-19T15:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatedetailreports -->
+        <test-method status="PASS" signature="closedriver()[pri:0, instance:com.Su.Testcases.i20ApplicationSanityTest@6a2bcfcb]" name="closedriver" is-config="true" duration-ms="2372" started-at="2020-04-19T15:48:29Z" finished-at="2020-04-19T15:48:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+      </class> <!-- com.Su.Testcases.i20ApplicationSanityTest -->
+    </test> <!-- i2o SU Sanity testing -->
+  </suite> <!-- i2o Sound united Automation -->
+</testng-results>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [i2o V2 Test Suite]">
+  <test name="i2o V2 Production testing(failed)">
+    <classes>
+      <class name="com.i2o.Testcases.PPDeployemetTesting">
+        <methods>
+          <include name="verifycolourRequestCount"/>
+          <include name="verifymastermanagementmodule"/>
+          <include name="verifyManagecPanelmodule"/>
+          <include name="verifyManagecolourmodule"/>
+          <include name="openchromedriver"/>
+        </methods>
+      </class> <!-- com.i2o.Testcases.PPDeployemetTesting -->
+    </classes>
+  </test> <!-- i2o V2 Production testing(failed) -->
+</suite> <!-- Failed suite [i2o V2 Test Suite] -->
