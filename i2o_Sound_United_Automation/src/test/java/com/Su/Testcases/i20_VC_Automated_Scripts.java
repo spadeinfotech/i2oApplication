@@ -7,10 +7,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.i2o.Exllib.excellibrary;
+import com.i2o.Exllib.readWER;
 import com.i2o.Testutil.ExceptionhadlingClass;
 import com.i2o.base.TestBase;
-import com.i2o.readExl.excellibrary;
-import com.i2o.readExl.readWER;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -23,7 +23,7 @@ public class TestBase {
 	public static Properties prop;
 	public static File file;
 	public static WebElement element=null;
-
+	public static int teststep=0;
 	//public  static EventFiringWebDriver e_driver;
 	//public static WebEventListener eventListener;
 	
@@ -31,9 +31,9 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			//FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\java\\com\\i2o\\config\\config.properties");
-			FileInputStream fis=new FileInputStream(".\\src\\main\\java\\com\\i2o\\config\\config.properties");
+			FileInputStream configfis=new FileInputStream(".\\src\\main\\java\\com\\i2o\\config\\config.properties");
 			
-			prop.load(fis);
+			prop.load(configfis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

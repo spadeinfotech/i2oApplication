@@ -1,4 +1,4 @@
-package com.i2o.readExl;
+package com.i2o.Exllib;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -96,8 +96,10 @@
 			<configuration>
 				<suiteXmlFiles>
 				<!-- TestNG suite XML files -->
-					<suiteXmlFile>TestNG.xml</suiteXmlFile>
+					<suiteXmlFile>Prestage.xml</suiteXmlFile>
+					<suiteXmlFile>Mart.xml</suiteXmlFile>
 				</suiteXmlFiles>
+			
 			</configuration>
 	</plugin>
 </plugins>

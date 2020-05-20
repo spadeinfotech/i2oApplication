@@ -4,7 +4,7 @@
 
 <test name="i2o SU Sanity testing" >
 <classes>
-<class name="com.Su.Testcases.i20ApplicationSanityTest"></class>
+<class name="com.Su.Testcases.Mart_Testcases"></class>
 </classes>
 </test>
 

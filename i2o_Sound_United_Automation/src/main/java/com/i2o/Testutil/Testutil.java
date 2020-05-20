@@ -25,6 +25,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.cloud.bigquery.BigQuery;
 import com.google.cloud.bigquery.BigQueryOptions;
+import com.google.cloud.bigquery.FieldList;
+import com.google.cloud.bigquery.FieldValueList;
 import com.google.common.io.Files;
 import com.i2o.base.TestBase;
 
@@ -44,12 +46,9 @@ public class Testutil extends TestBase {
 		driver.switchTo().frame("mainpanel");
 	}
 	
-		 
+	
+	
 
-	    public BigQuery getBigqueryInstance(String projectId) {
-
-	        return BigQueryOptions.getDefaultInstance().toBuilder().setProjectId(projectId).build().getService();
-	    }
 
 
 	public static Object[][] getTestData(String sheetName) {
@@ -78,10 +77,26 @@ public class Testutil extends TestBase {
 		}
 		return data;
 	}
+	public void deletefolder() {
+		 File dest=new File(".\\screenshots");
+		// dest.mkdir();
+		  String[]entries = dest.list();
+		  for(String s: entries){
+		      File currentFile = new File(dest.getPath(),s);
+		      currentFile.delete();
+		  }
+		  
+		  System.out.println("directory is "+dest.isDirectory());
+		if(dest.isDirectory()) {
+			dest.delete();
+		}
+		dest.mkdir();
+		 
+	}
 
 	public static  void takeScreenshotAtEndOfTest() throws IOException {
 		
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);  
 		String currentDir = System.getProperty("user.dir");
 		Files.copy(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));	
 
@@ -201,4 +216,13 @@ public class Testutil extends TestBase {
 	public static void explicitwait() { 
 	 WebDriverWait wait=new WebDriverWait(driver, 20);
 	}
+	
+	/**
+     * fieldValueList is the current BQ row and fieldList is a list of columns of the query result.
+     * @param fieldValueList
+     * @param fieldList
+     * @return
+     */
+    
+	
 }

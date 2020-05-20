@@ -1,4 +1,4 @@
-package com.i2o.readExl;
+package com.i2o.Exllib;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,6 +11,7 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -19,8 +20,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class excellibrary {
 
 	
-	public static String filepath="C:\\Ankit-WorkArea\\SeleniumWorkSpace\\i2o_Sound_United_Auomation\\src\\main\\java\\com\\i2o\\Testdata_Excel\\Testscenarios.xlsx";
-	
+	public static String filepath=".\\src\\main\\java\\com\\i2o\\Testdata_Excel\\Testscenarios.xlsx";
 	public String getExcelValue (String sheetName, int rowNum, int cellNum)throws EncryptedDocumentException, InvalidFormatException, IOException{
 		String retValue=null;
 		
@@ -43,17 +43,20 @@ public class excellibrary {
 	
 	
 	public double getExcelValueInt(String sheetName, int rowNum, int cellNum) throws EncryptedDocumentException, InvalidFormatException, IOException{
-		double retValue=0;
+		double retValue=0.0;
 		
 		try {
 			FileInputStream fis = new FileInputStream(filepath);
 			Workbook wb = WorkbookFactory.create(fis);
 			Sheet s = wb.getSheet(sheetName);
-			Row r = s.getRow(rowNum);
-			Cell c = r.getCell(cellNum);
-			String cellvalue = c.getStringCellValue();	
+			DataFormatter formatter = new DataFormatter();
+		
+			//Row r = s.getRow(rowNum);
+			//Cell c = r.getCell(cellNum);
+			String val = formatter.formatCellValue(s.getRow(rowNum).getCell(cellNum));
+		//	String cellvalue = c.getStringCellValue();	
 		//	retValue=Integer.parseInt(cellvalue);
-retValue=Double.parseDouble(cellvalue);
+retValue=Double.parseDouble(val);
 		}catch (IOException e) {
 			e.printStackTrace();
 		}

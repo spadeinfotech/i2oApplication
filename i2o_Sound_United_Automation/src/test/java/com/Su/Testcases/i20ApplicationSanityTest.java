@@ -15,11 +15,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.i2o.Exllib.excellibrary;
+import com.i2o.Exllib.readWER;
 import com.i2o.Testutil.ExceptionhadlingClass;
 import com.i2o.Testutil.Testutil;
 import com.i2o.base.TestBase;
-import com.i2o.readExl.excellibrary;
-import com.i2o.readExl.readWER;
 
 
 
@@ -42,7 +42,7 @@ public class i20ApplicationSanityTest extends TestBase {
 		 
 		System.out.println("inside test");
 		i20initialization();
-		
+		util.deletefolder();
 	}
 	
 	@AfterTest
@@ -53,13 +53,19 @@ public class i20ApplicationSanityTest extends TestBase {
 	
   @Test(priority=1, enabled=true)
   public void ValidateHomepage() throws InterruptedException, IOException, AWTException, EncryptedDocumentException, InvalidFormatException {
+	  WebDriverWait wait=new WebDriverWait(driver, 60);
+	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-home/div/div/div[2]/div[2]/dashboard/div/div/div[2]/div[2]/ag-grid-angular/div/div[2]/div[1]/div[3]/div[2]/div/div/div[1]")));
 	  Thread.sleep(15000);
 		System.out.println("in home page");	
 	  Testutil.takeScreenshotAtEndOfTest();
 	  
 	System.out.println( driver.getCurrentUrl());
 	
-String cogs=	driver.findElement(By.xpath("/html/body/app-root/app-home/div/div/div[2]/div[2]/dashboard/div/div/div[2]/div[2]/ag-grid-angular/div/div[2]/div[1]/div[3]/div[2]/div/div/div[1]/div[1]/app-multi-format-cell-renderer/div/div[2]")).getText();
+	
+String DataUpdatedFor=driver.findElement(By.xpath("//*[@id='route-container']/dashboard/app-breadcrumb/div/div[2]/span")).getText();
+System.out.println("DataUpdatedFor"+DataUpdatedFor);	
+
+String cogs=driver.findElement(By.xpath("/html/body/app-root/app-home/div/div/div[2]/div[2]/dashboard/div/div/div[2]/div[2]/ag-grid-angular/div/div[2]/div[1]/div[3]/div[2]/div/div/div[1]/div[1]/app-multi-format-cell-renderer/div/div[2]")).getText();
 	
 System.out.println("cogs"+cogs);
 
@@ -67,36 +73,8 @@ System.out.println("cogs"+cogs);
 	 System.out.println("cogs list"+allcogs.size());
 		 
 	 for(int val=0; val<allcogs.size(); val++) {
-		 System.out.println("dashboard value"+allcogs.get(val).getText());
-		 
-		 
+		 System.out.println("dashboard value"+allcogs.get(val).getText());	 
 	 }
-	 
-	 JavascriptExecutor js = (JavascriptExecutor) driver; 
-	// js.executeScript("document.getElementById('enter element id').checked=true;");
-js.executeScript("document.querySelector(\"#raphael-paper-2127 > g > g.raphael-group-2132-plots > g.raphael-group-2164-line > g > g.raphael-group-2191-plot-group > path:nth-child(5)\")\n" + 
-		"");
-
-Thread.sleep(3000);
-	 //js.executeScript(js,Arguments);
-	  
-		 /*
-		
-		String T3cogs="//*[@id='route-container']/dashboard/div[3]/div/div[2]/div[2]/ag-grid-angular/div/div[2]/div[1]/div[3]/div[2]/div/div/div[3]/div[2]/child-cell/div/span[1]/span[2]";
-
-		
-		String T4cogs="//*[@id='route-container']/dashboard/div[3]/div/div[2]/div[2]/ag-grid-angular/div/div[2]/div[1]/div[3]/div[2]/div/div/div[4]/div[2]/child-cell/div/span[1]/span[2]";
-	
-
-
-		String T2cogs="//*[@id='route-container']/dashboard/div[3]/div/div[2]/div[2]/ag-grid-angular/div/div[2]/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/child-cell/div/span[1]/span[2]";
-		
-
-
-		String T5cogs="//*[@id='route-container']/dashboard/div[3]/div/div[2]/div[2]/ag-grid-angular/div/div[2]/div[1]/div[3]/div[2]/div/div/div[5]/div[2]/child-cell/div/span[1]/span[2]";
-		*/
-	
-	
 	   
   }
   
@@ -107,12 +85,15 @@ Thread.sleep(3000);
 		  	
 	  driver.findElement(By.id("salesanalysis")).click();
 WebDriverWait wait=new WebDriverWait(driver, 60);
-	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),' Brand Analysis')]")));
-	 Thread.sleep(8000);
+	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Total Sales')]")));
+	
 	  System.out.println( driver.getCurrentUrl());
+	  Thread.sleep(8000);
 	  Testutil.takeScreenshotAtEndOfTest();
-	  
-
+	  driver.findElement(By.xpath("//button[text()='Month']")).click();
+	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Total Sales')]")));
+	  Thread.sleep(15000);	  
+	  Testutil.takeScreenshotAtEndOfTest();
 	   
   }
   
@@ -137,9 +118,10 @@ WebDriverWait wait=new WebDriverWait(driver, 60);
 	  System.out.println( "Inside pricemonitoralerts module");
 	  WebDriverWait wait=new WebDriverWait(driver, 60);
  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='route-container']/price-monitor-alerts/div/div[3]/app-price-summary/div/div[3]/div/div[3]/div/div/ag-grid-angular/div/div[4]/span[1]")));
+
+ System.out.println( driver.getCurrentUrl());	
  Thread.sleep(6000); 
 	
- System.out.println( driver.getCurrentUrl());	
  Testutil.takeScreenshotAtEndOfTest();
 	  
 	 	   
@@ -154,9 +136,9 @@ WebDriverWait wait=new WebDriverWait(driver, 60);
 	  System.out.println( "Inside newresellermanagement module");
 	  WebDriverWait wait=new WebDriverWait(driver, 60);
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='summaryRect']/table[2]/tr[1]/td[4]")));
-	 Thread.sleep(8000); 
-		
-	System.out.println( driver.getCurrentUrl()); 
+System.out.println( driver.getCurrentUrl()); 
+Thread.sleep(8000); 
+
 	Testutil.takeScreenshotAtEndOfTest();
 	  
 	 	   
@@ -170,6 +152,7 @@ WebDriverWait wait=new WebDriverWait(driver, 60);
 	  WebDriverWait wait=new WebDriverWait(driver, 60);
 	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='route-container']/app-brand-content-monitoring/div/app-brand-summary/div/div[4]/div/div[2]/div[2]/div/ag-grid-angular/div/div[4]/span[1]")));
 		 System.out.println( driver.getCurrentUrl()); 
+		 Thread.sleep(8000); 
 	  Testutil.takeScreenshotAtEndOfTest();
 	  
 	 	   
@@ -191,7 +174,7 @@ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/ap
 		 
 	 for(int val=0; val<allcogs.size(); val++) {
 		 System.out.println("detailreport value"+allcogs.get(val).getText());
-		 
+		
 		 
 	 }
   }  

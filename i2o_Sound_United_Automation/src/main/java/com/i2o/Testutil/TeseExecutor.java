@@ -4,8 +4,8 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
-import com.i2o.readExl.excellibrary;
-import com.i2o.readExl.readWER;
+import com.i2o.Exllib.excellibrary;
+import com.i2o.Exllib.readWER;
 
 public class TeseExecutor {
 
