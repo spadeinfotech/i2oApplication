@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [i2o Sound united Automation]">
+  <test name="i2o SU sanity testing(failed)">
+    <classes>
+      <class name="com.cc.startup.Startup">
+        <methods>
+          <include name="RuntestSuite"/>
+        </methods>
+      </class> <!-- com.cc.startup.Startup -->
+    </classes>
+  </test> <!-- i2o SU sanity testing(failed) -->
+</suite> <!-- Failed suite [i2o Sound united Automation] -->

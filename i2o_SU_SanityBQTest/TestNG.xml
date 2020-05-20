@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="i2o Sound united Automation" verbose="1">
+
+<test name="i2o SU sanity testing" >
+<classes>
+<class name="com.cc.startup.Startup"></class>
+
+
+</classes>
+
+</test>
+
+
+ </suite>

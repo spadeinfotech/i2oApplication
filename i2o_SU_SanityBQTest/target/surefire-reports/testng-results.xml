@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="i2o Sound united Automation" duration-ms="108778" started-at="2020-05-20T14:08:26Z" finished-at="2020-05-20T14:10:15Z">
+    <groups>
+    </groups>
+    <test name="i2o SU sanity testing" duration-ms="108778" started-at="2020-05-20T14:08:26Z" finished-at="2020-05-20T14:10:15Z">
+      <class name="com.cc.startup.Startup">
+        <test-method status="PASS" signature="RuntestSuite()[pri:0, instance:com.cc.startup.Startup@3dd3bcd]" name="RuntestSuite" duration-ms="108748" started-at="2020-05-20T19:38:26Z" finished-at="2020-05-20T19:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RuntestSuite -->
+      </class> <!-- com.cc.startup.Startup -->
+    </test> <!-- i2o SU sanity testing -->
+  </suite> <!-- i2o Sound united Automation -->
+</testng-results>
